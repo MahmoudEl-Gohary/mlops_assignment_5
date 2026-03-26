@@ -1,1 +1,17 @@
 /iris.csv
+# Python Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Local MLflow Database & Artifacts
+mlflow.db
+mlruns/
+model_info.txt
+download_log.txt
+
+# Local DVC Remote (from earlier testing)
+dvc-remote/
+
+# Data Files (Managed by DVC instead of Git)
+iris.csv
