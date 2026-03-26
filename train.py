@@ -15,7 +15,7 @@ mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI", "sqlite:///mlflow.db"))
 mlflow.set_experiment("iris_validation_pipeline")
 
 with mlflow.start_run() as run:
-    model = RandomForestClassifier(n_estimators=10, max_depth=1, random_state=42)
+    model = RandomForestClassifier(n_estimators=1, max_depth=1, random_state=42)
     model.fit(X_train, y_train)
     
     predictions = model.predict(X_test)
