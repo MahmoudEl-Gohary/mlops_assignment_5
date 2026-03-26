@@ -3,8 +3,7 @@ name: MLOps Validation and Deployment Pipeline
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
 
 jobs:
   validate:
