@@ -27,4 +27,4 @@ def check_accuracy():
         sys.exit(0)
 
 if __name__ == "__main__":
-    check_accuracy()
+    check_accuracy() 
